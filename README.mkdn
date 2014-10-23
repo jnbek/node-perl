@@ -1,10 +1,12 @@
-Synchronous but useful embed Perl for node.js
-==============================================
+Synchronous but useful embedded Perl for node.js
+================================================
+
+<B>This module is still working, but @tokuhirom don't want to maintain this module. MAINTAINER needed! Please contact me at github issues.</B>
 
 SYNOPSIS
 --------
 
-    var Perl = require('perl-simple').Perl;
+    var Perl = require('perl').Perl;
     var perl = new Perl();
     var ret = perl.evaluate("reverse 'yappo'");
     console.log(ret); // => oppay
@@ -19,7 +21,7 @@ SYNOPSIS
 Classes
 -------
 
-### require('perl-simple').Perl
+### require('perl').Perl
 
 #### var perl = new Perl()
 
@@ -83,7 +85,7 @@ If you got a error while loading libperl.dylib, please set a `DYLD_LIBRARY_PATH`
 Notes
 -----
 
-  * perl call is a synchronous.
+  * The calls to Perl are synchronous ones.
 
 THANKS TO
 ---------
